@@ -1,1 +1,29 @@
 target
+
+# Exclude CMake build directories
+cmake-build-debug/
+**/cmake-build-debug/
+
+# 为了更完整，也可以加上其他常见的 CMake 构建目录
+cmake-build-release/
+cmake-build-*/
+
+# IDE 相关
+.idea/
+.vscode/
+
+# 编译产生的文件
+*.exe
+*.obj
+*.o
+*.out
+*.dll
+*.so
+*.dylib
+
+# CMake 生成的文件
+CMakeCache.txt
+CMakeFiles/
+**/CMakeFiles/
+*.cmake
+*.make
